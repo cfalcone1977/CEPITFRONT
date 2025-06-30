@@ -1,0 +1,11 @@
+$primary: #219ebc;
+$secondary: #8ecae6;
+$success: #023e8a;
+$danger: #fb8500;
+$warning: #ffb703;
+$info: #ffa5ab;
+$light: #fef9ef;
+$dark: #160c03;
+@import "../../node_modules/bootstrap/scss/bootstrap.scss"
+
+// npx sass src/scss/custom.scss dist/styles.css

@@ -1,0 +1,47 @@
+#titulo{
+    font-size: 18px;
+   }
+#btncerrarModal{
+    width: 60px;
+    height: 30px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: 2px 2px 2px 0px;
+}
+
+#ventanaModal{
+    border-radius: 7px;
+    border: none;
+    box-shadow: 5px 5px 5px 5px grey;
+    justify-items: center;
+}
+
+#contenedorModal{
+    width: 270px;
+}
+
+
+#formularioFiltro{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+    padding: 15px;
+}
+#inputTitulo, #inputDirector, #inputYear, #selectGenero, #botonFiltro{
+    border-radius: 7px;
+    height: 35px;
+}
+
+#inputYear{
+    width: 70px;
+}
+
+#selectGenero{
+  width: 105px;
+}
+
+#botonFiltro{
+    box-shadow: 5px 5px 10px black;
+}
+
