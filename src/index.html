@@ -8,38 +8,37 @@
     <link rel="shortcut icon" href="./images/film Favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="app.css">
     <script defer src="./app.js" type="module"></script>
-    <title>Movies Web</title>
+    <title>Peliculas Web</title>
 
 </head>
 <body class="container" id="container">
-  <h1 class="text- text-center mb-4">Welcome to the Movies Web</h1>
-    <section class="row py-5">
+  <h1 class="text- text-center mb-4">Bienvenido a Peliculas en la Web</h1>
+    <section class="row py-5" id="seccionImagen">
         <img src="./images/movies-collage.webp" alt="movies collage" class="mb-4">
     </section>
 
     <form action="" id="formularioFiltro">
       <div class="form-check">
-         <input class="form-check-input" type="checkbox" value="" id="CheckTitulo">
-         <label class="form-check-label" for="CheckTitulo">
+         <input class="form-check-input" type="checkbox" value="" id="checkTitulo">
+         <label class="form-check-label" for="checkTitulo" id="labelTitulo">
          Titulo
          </label>
       </div>      
-      <label for=""></label>
-      <input type="text" id="inputTitulo" placeholder="ej.: Superman">
+      <input type="text" id="inputTitulo" placeholder="ej.: Jurassic Park" disabled>
       <div class="form-check">
-         <input class="form-check-input" type="checkbox" value="" id="CheckDirector">
-         <label class="form-check-label" for="CheckDirector">
+         <input class="form-check-input" type="checkbox" value="" id="checkDirector">
+         <label class="form-check-label" for="checkDirector">
          Director
          </label>
       </div>      
-      <input type="text" id="inputDirector" placeholder="ej.: Federico Fellini">
+      <input type="text" id="inputDirector" placeholder="ej.: Steven Spielberg" disabled>
        <div class="form-check">
-         <input class="form-check-input" type="checkbox" value="" id="CheckYear">
-         <label class="form-check-label" for="CheckYear">
+         <input class="form-check-input" type="checkbox" value="" id="checkYear">
+         <label class="form-check-label" for="checkYear">
          Año
          </label>
       </div>         
-      <input type="text" id="inputYear" placeholder="ej.: 1979">
+      <input type="number" id="inputYear" placeholder="1993" disabled>
    <select class="form-select" aria-label="Default select example" id="selectGenero">
   <option selected>Genero</option>
   <option value="1">Action</option>
@@ -57,7 +56,7 @@
   <option value="13">Biography</option>  
   <option value="14">History</option>    
 </select>     
-      <button type="submit" id="botonFiltro">BUSCAR</button>
+      <button type="button" id="botonBuscar">BUSCAR</button>
     </form>
 
 
@@ -70,9 +69,9 @@
         <h1 id="titulo"></h1>
         <p id="sinopsis"></p>
         <p id="duracion"></p>
-        <p id="genero"></p>
-      </div>   
+        <p id="genero"></p> 
         <button id="btncerrarModal">Cerrar</button>      
+      </div>          
     </dialog>   
 </body>
 </html>
