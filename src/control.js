@@ -2,6 +2,32 @@ import {contenedorPeliculas, ventanaModal, botonCerrarModal} from "./app.js";
 import { urlBase, traerPeliculas } from "./api.js";
 
 
+
+export async function crearTarjetas(url){
+          const movies = await traerPeliculas(url);     
+          contenedorPeliculas.textContent="";                  
+          if (!movies.message){
+                    for (let i = 0; i < movies.length; i=i+1) {
+                        const card = document.createElement('article');
+                        card.classList.add("card", "col-12", "col-md-3");
+                        card.style.minWidth = '18rem';
+                        card.style.maxWidth = '80%';
+                        card.innerHTML = `
+                       <img src="${movies[i].poster}" class="card-img-top mt-2 rounded rounded-2" alt="${movies[i].title}">
+                       <div class="card-body">
+                          <h5 class="card-title">${movies[i].title}</h5>
+                          <p class="card-text">${movies[i].year}</p>
+                          <p class="card-text">${movies[i].director}</p>
+                          <a href="#" class="btn btn-info" data-identificador="${movies[i].id}" id="botonInfo">More Info</a>
+                        </div>`;
+                    contenedorPeliculas.appendChild(card);   
+                    }
+                             }else {console.log("muestra mensaje no encontradas")
+                                    mensajeNoEncontradas();                              
+                                   };
+}
+
+
 export async function mostrarModal(identificador){
       const pelixIdentificador= await traerPeliculas(urlBase+"id/"+identificador);
       console.log(pelixIdentificador);

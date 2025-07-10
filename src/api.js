@@ -14,7 +14,3 @@ export async function traerPeliculas(pagina) {
 }
 
 export const urlBase="http://localhost:3000/pelicula/"
-
-/*
-const data=await traerPeliculas(urlBase);
-console.log(data);*/
