@@ -103,5 +103,5 @@ Al hacer clic en el botón "More Info" de una tarjeta de película, la aplicaci�
 para obtener los detalles específicos y mostrarlos en un modal.
 
 ### 😎Disfruta filtrando y viendo detalles de las películas de tu interes😎!!  
-Agradecimiento especial a MArcelo, Nahuel, Jorge y Natalia; por transmitirnos conocimientos para poder realizar este TP.
+Agradecimiento especial a Marcelo, Nahuel, Jorge y Natalia; por transmitirnos conocimientos para poder realizar este TP.
 
