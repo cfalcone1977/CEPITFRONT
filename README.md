@@ -61,11 +61,12 @@ _git clone https://github.com/cfalcone1977/CEPITFRONT_
 
 **Inicia el Backend:**  
 Asegúrate de que tu proyecto backend esté corriendo. Si lo configuraste como se indica en su README.md, puedes iniciarlo con:  
-# Desde la carpeta de tu backend
-npm run dev
+Desde la carpeta de tu backend:  
+**npm run dev**  
+Confirma que el servidor backend está escuchando en http://localhost:3000.  
 
-Confirma que el servidor backend está escuchando en http://localhost:3000.
 
+      
 **Abre el Frontend:**  
 Simplemente abre el VSC, "File" - "Open Folder", selecciona la carpeta donde clonaste el   
 repositorio y abre el archivo index.html. Estando en el archivo "index.html", haz clic   
@@ -74,15 +75,15 @@ con el boton derecho del mosue y selecciona la opcion "Open With Live Server".
 La aplicación cargará automáticamente la lista de películas desde el backend.  
 
 **Estructura Principal del Proyecto**  
-.
-├── index.html                  # Página principal de la aplicación
-├── app.js                      # Lógica principal del frontend, manejo de eventos DOM
-├── api.js                      # Funciones para interactuar con la API del backend
-├── control.js                  # Funciones auxiliares (creación de tarjetas, modal, habilitar/deshabilitar inputs)
-├── app.css                     # Estilos CSS personalizados para la interfaz
-├── images/                     # Carpeta para imágenes (ej. film Favicon.jpg, movies-collage.webp, Warning.gif)
-├── dist/                       # Contiene estilos compilados de Bootstrap (styles.css)
-└── README.md                   # Este archivo
+
+├── index.html                  # Página principal de la aplicación  
+├── app.js                      # Lógica principal del frontend, manejo de eventos DOM  
+├── api.js                      # Funciones para interactuar con la API del backend  
+├── control.js                  # Funciones auxiliares (creación de tarjetas, modal, habilitar/deshabilitar inputs)  
+├── app.css                     # Estilos CSS personalizados para la interfaz  
+├── images/                     # Carpeta para imágenes (ej. film Favicon.jpg, movies-collage.webp, Warning.gif)  
+├── dist/                       # Contiene estilos compilados de Bootstrap (styles.css)  
+└── README.md                   # Este archivo  
 
 **Interacción con la API (Backend)**  
 Esta aplicación frontend se comunica con el backend de administración de películas 
@@ -101,5 +102,6 @@ Cuando se utiliza el formulario de filtro y se presiona "BUSCAR", la aplicación
 Al hacer clic en el botón "More Info" de una tarjeta de película, la aplicación realiza una solicitud 
 para obtener los detalles específicos y mostrarlos en un modal.
 
-## Disfruta filtrando y viendo detalles de las películas de tu interes!!
+### 😎Disfruta filtrando y viendo detalles de las películas de tu interes😎!!  
+Agradecimiento especial a MArcelo, Nahuel, Jorge y Natalia; por transmitirnos conocimientos para poder realizar este TP.
 
